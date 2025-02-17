@@ -8,3 +8,20 @@
     max-width: inline-block;
 
 }
+.card .card-img{
+    max-width: 60%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.card .card-title{
+    font-family: Arial sans-serif;
+    margin: 10px;
+    color: hsl(0, 0%, 20%);
+}
+
+.card .card-title{
+    font-family: Arial sans-serif;
+    color: hsl(0, 0%, 35%);
+}
