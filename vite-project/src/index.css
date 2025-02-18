@@ -5,23 +5,24 @@
     padding: 20px;
     margin: 10px;
     text-align: center;
-    max-width: inline-block;
+    max-width: 250px;
+    display: inline-block;
 
 }
 .card .card-img{
     max-width: 60%;
     height: auto;
     border-radius: 50%;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .card .card-title{
     font-family: Arial sans-serif;
-    margin: 10px;
+    margin: 0;
     color: hsl(0, 0%, 20%);
 }
-
-.card .card-title{
+.card .card-text{
     font-family: Arial sans-serif;
+    margin: 0;
     color: hsl(0, 0%, 35%);
 }
