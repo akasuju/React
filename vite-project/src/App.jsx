@@ -1,8 +1,11 @@
-import Student from "./Students";
+import UserGreetings from "./UserGreetings";
 function App() {
   return (
     <>
-     <Student name="Sujan" age={22} isStudent={true}/>
+ 
+     {/* <UserGreetings isLoggedIn={true} username="Sujan"/> */}
+     <UserGreetings />
+     {/* <UserGreetings isLoggedIn={false} username="Sujan"/> */}
     </>
   );
 }
