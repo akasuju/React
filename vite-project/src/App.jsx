@@ -1,11 +1,11 @@
-import UserGreetings from "./UserGreetings";
+// import UserGreetings from "./UserGreetings";
+import List from './List'
+
 function App() {
   return (
     <>
- 
-     {/* <UserGreetings isLoggedIn={true} username="Sujan"/> */}
-     <UserGreetings />
-     {/* <UserGreetings isLoggedIn={false} username="Sujan"/> */}
+    <List/>
+     {/* <UserGreetings /> */}
     </>
   );
 }
