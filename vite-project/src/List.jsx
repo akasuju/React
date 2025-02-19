@@ -1,15 +1,38 @@
-function List() {
-  const fruits = [
-    { id: 1, name: "apple", calories: 95 },
-    { id: 2, name: "banana", calories: 105 },
-    { id: 3, name: "mango", calories: 100 },
-  ];
-  const listItems = fruits.map((fruits) => (
-    <li key={fruits.id}>
-      {" "}
-      {fruits.name}: &nbsp;{fruits.calories}
+import PropTypes from "prop-types";
+function List(props) {
+  const itemList = props.items;
+  const category = props.category;
+
+  // fruits.sort((a ,b)=>a.name.localeCompare(b.name));
+  // fruits.sort((a ,b)=>a.calories - b.calories);
+
+  // const lowCalfruits= fruits.filter(fruit=>fruit.calories<100);
+
+  const listItems = itemList.map((item) => (
+    <li key={item.id}>
+      {item.name}: &nbsp;{item.calories}
     </li>
   ));
-  return <ul>{listItems}</ul>;
+  return (
+    <>
+      <h3>{category}</h3>
+      <ul>{listItems}</ul>
+    </>
+  );
 }
+
+List.propTypes={
+    category: PropTypes.string,
+    items: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        name: PropTypes.string.isRequired,
+        calories: PropTypes.number.isRequired
+
+    }))
+}
+
+List.defaultProps = {
+    category: "Category",
+    items: []
+};
 export default List;
