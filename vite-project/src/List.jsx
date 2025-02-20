@@ -21,15 +21,17 @@ function List(props) {
   );
 }
 
-List.propTypes={
+List.propTypes = {
     category: PropTypes.string,
-    items: PropTypes.arrayOf(PropTypes.shape({
-        id: PropTypes.number.isRequired,
-        name: PropTypes.string.isRequired,
-        calories: PropTypes.number.isRequired
+    items: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            name: PropTypes.string.isRequired,
+            calories: PropTypes.number.isRequired,
+        })
+    ),
+};
 
-    }))
-}
 
 List.defaultProps = {
     category: "Category",
