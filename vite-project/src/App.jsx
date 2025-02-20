@@ -1,6 +1,7 @@
 // import UserGreetings from "./UserGreetings";
 // import List from './list'
-import Button from "./Button";
+//import Button from "./Button";
+import MyComponent from "./MyComponent";
 
 function App() {
   // const fruits = [
@@ -21,7 +22,10 @@ function App() {
   //    {/* <UserGreetings /> */}
   //   </>
   // );
-  return (<Button />);
+  return (
+  //<Button />
+  <MyComponent/>
+);
 }
 
 export default App;
