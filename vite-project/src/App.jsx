@@ -2,6 +2,11 @@
 // import List from './list'
 //import Button from "./Button";
 import MyComponent from "./MyComponent";
+import Paragraph from "./components/Paragraph";
+import List from "./components/List";
+import React from "react"
+import Counter from "./components/counter";
+import Todo from "./components/Todo";
 
 function App() {
   // const fruits = [
@@ -24,7 +29,13 @@ function App() {
   // );
   return (
   //<Button />
+  <div>
   <MyComponent/>
+  <Paragraph/>
+  <List/>
+  <Counter/>
+  <Todo/>
+  </div>
 );
 }
 
