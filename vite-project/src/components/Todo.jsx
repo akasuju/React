@@ -12,6 +12,11 @@ const handleSubmit= (e)=>{
 
 }
 
+const handleremove = (index) => {
+    setTasks(tasks.filter((item, i) => i !==
+    index))
+}
+
   return (
     <div className='h-[50vh]'>
 <input type="text" onChange={(e)=>{setTask(e.target.value)}} />
