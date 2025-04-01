@@ -13,8 +13,7 @@ const handleSubmit= (e)=>{
 }
 
 const handleremove = (index) => {
-    setTasks(tasks.filter((item, i) => i !==
-    index))
+setTasks(previousTasks => previousTasks.filter((task, i) => i !== index))
 }
 
   return (
